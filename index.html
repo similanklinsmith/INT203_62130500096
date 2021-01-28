@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basic Vue Js - HelloWorld App</title>
-
+  <title>Treasure-Maker</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+  <link rel="stylesheet" href="main.css">
   <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
   <!-- Using via Google Web Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -21,13 +22,36 @@
 </head>
 
 <body>
-  <div id="app" class="h-screen w-full bg-gray-200 flex items-start justify-start">
-    <img src="./images/1.jpg" class="w-1/3 h-full">
-    <div class="w-full flex items-center justify-end">
-      <i class="material-icons">face</i>
-      <p class="font-semibold text-xl tracking-wider uppercase px-3"> {{ msg }}</p>
+  <div id="app" class="transition duration-500 bg-gray-50 w-full h-screen">
+      <div id="nav" class="cursor-pointer lg:text-lg sm:text-sm font-sans flex justify-end lg:pr-24 sm:pr-12 lg:pt-8 sm:pt-4">
+        <div class="transition duration-300 ease-in hover:text-gray-400 inline-block lg:pr-24 sm:pr-12">All Work</div>
+        <div class="transition duration-300 ease-in hover:text-gray-400  inline-block lg:pr-24 sm:pr-12">Mees</div>
+        <div class="transition duration-300 ease-in hover:text-gray-400  inline-block lg:pr-24 lg:pl-48 sm:pr-12 sm:pr-24">Contact</div>
+        <div class="transition duration-300 ease-in hover:text-gray-400  inline-block lg:pr-24 sm:pr-8 ">EN</div>
+      </div>
+      <div id="logo" class="grid gap-3 justify-start absolute">
+        <a href="https://www.youtube.com/channel/UCx9hXYOCvUYwrprEqe4ZQHA"><img id="treasure" src="./images/treasure.png" class="w-5 transition duration-300 transform hover:scale-110 hover:opacity-50 lg:ml-8 sm:ml-4"></a>
+        <img id="twitter" src="./images/iconmonstr-twitter-2.svg" class="transition duration-300 transform hover:scale-110 hover:opacity-50 lg:ml-8 sm:ml-4">
+        <img id="facebook" src="./images/iconmonstr-facebook-6.svg" class="transition duration-300 transform hover:scale-110 hover:opacity-50 lg:ml-8 sm:ml-4">
+        <img id="instagram" src="./images/iconmonstr-instagram-12.svg" class="transition duration-300 transform hover:scale-110 hover:opacity-50 lg:ml-8 sm:ml-4">
+      </div>
+      <div id="text" class="cursor-pointer transition duration-300 mt-24 mx-96 font-extralight lg:text-9xl sm:text-6xl text-gray-800 font-serif "> 
+        <h1 id="food" class="lg:mx-96 sm:mx-24 transition duration-500 ease-in-out transform hover:-skew-x-12">Food<sup class="lg:text-3xl sm:text-xl font-thin align-text-top font-mono">{{ food }}</sup></h1>
+        <h1 id="lifestyle" class="lg:mx-96 sm:mx-24 transition duration-500 ease-in-out transform hover:-skew-x-12">Lifestyle<sup class="lg:text-3xl sm:text-xl font-thin align-text-top font-mono">{{ lifestyle }}</sup></h1>
+        <h1 id="drinks" class="lg:mx-96 sm:mx-24 transition duration-500 ease-in-out transform hover:-skew-x-12">Drinks<sup class="lg:text-3xl sm:text-xl font-thin align-text-top font-mono">{{ drinks }}</sup></h1>
+      </div>
+    <div class="cursor-pointer flex justify-end"> 
+      <p id="bts" class ="text-right lg:pr-52 lg:pt-16 sm:pr-24 sm:pt-12 lg:text-xl s:text-base">Behind the scenes</p>
+    </div>
+    <div id="floating-img" class="z-0 transition ease-in-out duration-500">
+      <img id="juice" class="lg:w-96 sm:w-72 absolute bottom-0 left-36"  src="./images/juice.jpg">
+      <img id="burger" class="lg:w-80 sm:w-64 absolute bottom-0 left-64"  src="./images/burger.jpg">
+      <img id="salmon" class="lg:w-96 sm:w-72 absolute bottom-0 left-32"  src="./images/salmon.jpg">
+      <img id="counter" class="lg:w-80 sm:w-64 absolute bottom-0 left-72"  src="./images/counter.jpg">
     </div>
   </div>
+  
+
 
   <!-- my main.js -->
   <script src="./main.js"></script>
