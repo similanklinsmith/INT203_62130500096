@@ -6,4 +6,4 @@
         }
 
     }
-    Vue.createApp(app).mount('#app')
+    const mountedApp = Vue.createApp(app).mount('#app')
