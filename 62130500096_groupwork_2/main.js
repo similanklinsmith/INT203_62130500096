@@ -1,14 +1,10 @@
     const app = {
         data() {
             return {
-                msg: 'Hello, Vue3'
+                msg: 'Hello, Vue3',
+                show: true,
+                image: './images/1.jpg'
             }
-        },
-        created(){
-            console.log('message is '+this.msg)
-        },
-        updated(){
-            console.log('message is changed to '+this.msg)
         }
 
     }
