@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treasure-Maker</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="food.css">
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+
+<body>
+  <div class="transition duration-500 bg-gray-50 w-full h-auto">
+    <div id="nav" class="z-50 cursor-pointer lg:text-lg md:text-base text-sm font-sans flex flex-row justify-end absoulute lg:pt-12 lg:pr-40 md:pt-8 md:pr-24 pr-6 pt-8 ">
+      <div class="transition duration-300 ease-in hover:text-gray-400 lg:pr-20 md:pr-8 pr-4 ">All Work</div>
+      <div class="transition duration-300 ease-in hover:text-gray-400 lg:pr-48 md:pr-24 pr-16">Mees</div>
+      <div class="transition duration-300 ease-in hover:text-gray-400 lg:pr-20 md:pr-8 pr-4 ">Contact</div>
+      <div class="transition duration-300 ease-in hover:text-gray-400 lg:pr-20 md:pr-8 pr-4 ">EN</div>
+    </div>
+
+    <div id="logo" class="absolute z-50 grid gap-3 justify-start lg:pt-4 lg:pl-16 md:pt-18 md:pl-12 pt-2 pl-8">
+      <a href="https://www.youtube.com/channel/UCx9hXYOCvUYwrprEqe4ZQHA"><img id="treasure" src="./images/treasure.png" class="w-5 transition duration-300 transform hover:scale-110 hover:opacity-50 "></a>
+      <img id="twitter" src="./images/iconmonstr-twitter-2.svg" class="transition duration-300 transform hover:scale-110 hover:opacity-50 ">
+      <img id="facebook" src="./images/iconmonstr-facebook-6.svg" class="transition duration-300 transform hover:scale-110 hover:opacity-50 ">
+      <img id="instagram" src="./images/iconmonstr-instagram-12.svg" class="transition duration-300 transform hover:scale-110 hover:opacity-50 ">
+    </div>
+
+    <div id="text-food" class="lg:text-96 md:text-72 text-48 lg:pt-30 md:pt-22 pt-12 grid justify-items-center font-extralight text-gray-800 font-serif"><h1>Food</h1></div>
+    <div class="relative flex flex-col">
+      <div id="pic1" class="lg:mt-96 md:mt-72 mt-48 lg:ml-32 md:ml-24 ml-16">
+        <img src="./images/pic1.jpg">
+      </div>
+      <div class="font-sans mt-1 lg:ml-32 md:ml-24 ml-16 ">
+        <p>Hofweb on locatie</p>
+        <p class="opacity-50">Reportage supplier</p>
+      </div>
+      
+      <div id="pic2" class="lg:mt-42 md:mt-36 mt-24 lg:ml-96 md:ml-24 ml-16">
+        <img src="./images/pic2.jpg">
+      </div>
+      <div class="font-sans mt-1 lg:ml-96 md:ml-24 ml-16">
+        <p>Hofweb </p>
+        <p class="opacity-50">Monthly content</p>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+
+</body>
+
+</html>
